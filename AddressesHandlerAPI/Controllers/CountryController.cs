@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using WebApi.Aplication.Interfaces;
 
@@ -6,6 +7,7 @@ namespace AddressesHandlerAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class CountryController (ICountryServices countryServices) :  ControllerBase
     {
         private readonly ICountryServices _countryServices = countryServices;

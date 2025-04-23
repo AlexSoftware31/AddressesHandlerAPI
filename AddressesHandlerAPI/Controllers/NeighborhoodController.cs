@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Aplication.Interfaces;
 
@@ -6,6 +7,7 @@ namespace AddressesHandlerAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class NeighborhoodController(INeighborhoodServices neighborhoodServices) : ControllerBase
     {
 

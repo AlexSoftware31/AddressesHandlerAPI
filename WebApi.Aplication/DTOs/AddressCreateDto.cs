@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebApi.Aplication.Dtos
+namespace WebApi.Aplication.DTOs
 {
     public class AddressCreateDto
     {

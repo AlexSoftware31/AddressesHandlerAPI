@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebApi.Aplication.Interfaces;
 
 namespace AddressesHandlerAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class MunicipalityController( IMunicipalityServices municipalityServices ) : ControllerBase
     {
 

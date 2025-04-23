@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebApi.Aplication.Dtos;
+using WebApi.Aplication.DTOs;
 using WebApi.Aplication.Interfaces;
 using WebApi.Domain.Entities;
 
@@ -8,6 +9,7 @@ namespace AddressesHandlerAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class AddressController(IAddressServices addressServices, IMapper mapper) : ControllerBase
     {
         private readonly IAddressServices _addressServices = addressServices;

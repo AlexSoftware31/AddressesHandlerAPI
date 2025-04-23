@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using WebApi.Aplication.Dtos;
+using WebApi.Aplication.DTOs;
 using WebApi.Domain.Entities;
 
 namespace AddressesHandlerAPI.Helpers
@@ -10,6 +10,7 @@ namespace AddressesHandlerAPI.Helpers
         {
             CreateMap<Address, AddressCreateDto>().ReverseMap();
             CreateMap<Address, AddressUpdateDto>().ReverseMap();
+            CreateMap<User, UserDto>().ReverseMap();
         }
     }
 }

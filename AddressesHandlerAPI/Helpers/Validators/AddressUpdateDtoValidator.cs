@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using WebApi.Aplication.Dtos;
+using WebApi.Aplication.DTOs;
 
 namespace AddressesHandlerAPI.Helpers.Validators
 {
