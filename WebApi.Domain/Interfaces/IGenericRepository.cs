@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebApi.Infrastructure.Interfaces
+namespace WebApi.Domain.Interfaces
 {
     public interface IGenericRepository<T> where T : class
     {

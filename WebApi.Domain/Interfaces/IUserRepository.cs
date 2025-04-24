@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using WebApi.Domain.Entities;
 
-namespace WebApi.Infrastructure.Interfaces
+namespace WebApi.Domain.Interfaces
 {
-    public interface IAddressRepository : IGenericRepository<Address>
+    public interface IUserRepository: IGenericRepository<User>
     {
-
+        Task<bool> IsAuthorized(User userLogin);
     }
 }

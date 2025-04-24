@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebApi.Domain.Entities;
+using WebApi.Domain.Interfaces;
 using WebApi.Infrastructure.Context;
-using WebApi.Infrastructure.Interfaces;
 
 namespace WebApi.Infrastructure.Repositories
 {

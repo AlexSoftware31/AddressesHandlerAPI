@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebApi.Aplication.Interfaces;
-using WebApi.Infrastructure.Interfaces;
+using WebApi.Domain.Interfaces;
 
 namespace WebApi.Aplication.Services.Implementations
 {

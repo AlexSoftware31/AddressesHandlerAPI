@@ -7,12 +7,12 @@ using WebApi.Aplication.Interfaces;
 using WebApi.Aplication.Services.Implementations;
 using AddressesHandlerAPI.Helpers.Validators;
 using WebApi.Infrastructure.Context;
-using WebApi.Infrastructure.Interfaces;
 using WebApi.Infrastructure.Repositories;
 using AddressesHandlerAPI.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using WebApi.Domain.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
